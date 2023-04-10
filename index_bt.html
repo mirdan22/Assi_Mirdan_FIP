@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Website Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <link href="css/main_bt.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header-con" class="grid-con">
+    <div id="logo" class="grid-con">
+        <a href="index.html"><img src="images/home/zima_logo_hm2.svg" alt="Zima Logo" width="100" height="200"></a>
+    </div>
+
+    <nav id="main-nav">
+        <h2 class="hidden">Main Navigation</h2>
+        <ul>
+            <li><a href="drinks.html">NEW DRINKS</a></li>
+            <li><a href="flavors.html">All FLAVORS </a></li>
+            <li><a href="brands.html">BRANDS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <a id="sign-up-header" href="signup.html"><h2>SIGN UP</h2></a>
+</header> 
+    <section id="video-section">
+        
+        <video id="main-video" src="videos/main-comp.mp4" ></video>
+    </section >
+    <main class="grid-container">
+      
+        <section class="col-4">
+         
+            <h2>Mirdan Assi</h2>
+            <img src="images/bt_img/mirdan_bio_pic.jpg" alt="Member 1">
+            <p>CEO</p>
+            <button class="pop-out-btn">View Bio</button>
+        </section>
+        <section class="col-4">
+            <h2>Daniel Alvendo</h2>
+            <p>CTO</p>
+            <img src="images/bt_img/programer_bio_bic.jpg" alt="Member 2">
+            <button class="pop-out-btn">View Bio</button>
+        </section>
+        <section class="col-4">
+            <h2>Jessica Benson</h2>
+            <p>COO</p>
+            <img src="images/bt_img/orginaizer_bio_pic.jpg" alt="Member 3">
+            <button class="pop-out-btn">View Bio</button>
+        </section>
+      </section>
+    </main>
+    <section id="footer-con">
+      <h2 class="hidden">Footer</h2>
+      <div class="grid-con" id="footer">
+          <div id="footer-logo" class="grid-con">
+              <a href="index.html"><img src="images/home/zima_logo_hm.svg" alt="Zima logo footer" width="150" height="200"></a>
+          </div>
+              <nav id="footer-nav">
+                  <h3 class="hidden">Footer Navigation</h3>
+                  <ul>
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="drinks.html">NEW DRINKS</a></li>
+                      <li><a href="flavors.html">ALL FLAVORS</a></li>
+                      <li><a href="brands.html">BRANDS</a></li>
+                      <li><a href="about.html">ABOUT US</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+              </nav>
+
+          <section id="media-footer">
+              <h3>Follow Us On</h3>
+              <ul class="social-media">
+                  <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></li>
+                  <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
+              </ul>
+      </section>
+      <p id="footer-copy">© 2023 Drinks Copyright Inc.</p>
+      </div>
+  </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
