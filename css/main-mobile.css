@@ -1,0 +1,518 @@
+@charset "UTF-8";
+
+div,p,body,header,footer,section,article,nav { 
+	margin: 0; 
+	padding: 0; 
+}	
+
+
+img {
+	margin: 0; 
+	padding: 0; 
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 18px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+.hidden {
+	display: none;
+}
+
+
+
+#container {
+	margin: 0 auto;
+	width: 428px;
+}
+
+
+.grid-con {
+	display: grid;
+	grid-template-columns: repeat(4, 90px);
+	grid-column-gap: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#header-con {
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#mobile-nav { 
+	grid-column: 4/-1;
+ }
+#header-logo { 
+	grid-column: 1;
+ }
+#mobile-nav:hover 
+{ cursor:pointer; 
+	opacity: 0.8; }
+
+.burger {
+	grid-column: 4;
+	width: 34px;
+	height: 6px;
+	background-color: #FF921C;
+	display: block;
+	margin-left: 40px;
+	margin-bottom: 5px;
+}
+
+.burger:first-child { margin-top: 14px; }
+
+/* index page */
+
+#hero-con {
+	
+	background: url("../images/mobile_home/hero_drinks_hm.jpg") no-repeat; 
+}
+
+#hero-text {
+	grid-column: 1/-1;
+	margin-top: 250px;
+}
+
+#hero-text h2 {
+	color:  #4cc678;
+	font-size: 36px;
+	line-height: 42px;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+#hero-text h2:hover { color: #1c1c1c; }
+
+#hero-text p:first-of-type {
+	line-height: 30px;
+	font-weight: bolder;
+	font-size: 24px;
+}
+
+#hero-text p{
+	color: #FFAE56;
+	margin-top: 20px;
+	line-height: 24px;
+	font-size: 19px;
+}
+
+#image-slider-con {
+	position: relative;
+	height: 550px;
+}
+
+#image-slider-con h2, #about-us-con h2, #contact-con h2 {
+	grid-column: 1/-1;
+	color: #1a1a1a;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	padding-bottom: 30px;
+	padding-top: 70px;
+	margin: 0;
+	text-align: center;
+
+}
+
+#mobile-slider-left {
+	top: 300px;
+	left: 20px;
+	position: absolute;
+	color:#fff;
+	font-size: 30px;
+
+	
+}
+
+#mobile-slider-right {
+	position: absolute;
+	right: 20px;
+	font-size: 30px;
+	color:#fff;
+	top: 300px;
+}
+
+.mb_energy-box h3, .mb_energy-box h4, .mb_energy-box p {
+	 text-align: center; 
+}
+
+.mb_energy-box h3 {
+	color: #1a1a1a;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.mb_energy-box h4 {
+	color: #1a1a1a;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.mb_energy-box p {
+	font-family: Arial;
+	margin-left: 15px;
+	font-size: 20px;
+	line-height: 28px;
+	color: #242424;
+	text-align: left;
+}
+
+#drinks-ad {
+	
+	
+	height: 100px;
+	margin-top: 120px;
+	
+	
+}
+
+#drinks-ad h2 {
+	grid-column: 1/-1;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	line-height: 28px;
+}
+
+#drinks-ad a {
+	font-size: 22px;
+	font-weight: bolder;
+	color: #fff;
+	text-decoration: underline 2px;
+}
+
+#drinks-ad a:hover { font-size: 26px; }
+
+
+#about-text { 
+	grid-column: 1/-1;
+	margin-left: 8px; 
+	margin-right: 8px}
+
+#about-text h3 {
+	font-size: 34px;
+	color: #1c1c1c;
+}
+
+
+
+#about-text p {
+	color: #0b0b0b;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.about-us-photo {
+	grid-column: 1/-1;
+	display: block;
+	margin: 40px auto 0 auto;
+}
+
+#contact-con {
+	margin-bottom: 60px;
+
+}
+
+#contact-text {
+	 grid-column: 1/-1; }
+
+#contact-text h3 {
+	 font-size: 24px;
+	text-align: left;
+	}
+
+#contact-text p:first-of-type { 
+	line-height: 30px;
+}
+
+
+#contact-text p {
+	 font-size: 18px; line-height: 40px;}
+
+#contact-text hr {
+	margin: 30px;
+	width: 320px;
+	border: solid 1.5px #979797;
+}
+
+#contact-text ul {
+	list-style: none;
+	padding: 0;
+}
+
+#contact-text ul li {
+	display: inline;
+	margin: 10px;
+}
+
+#contact-text ul li a {
+	font-size: 30px;
+	color: #1c1c1c;
+}
+
+
+#contact-form {
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact-form h3 {
+	 margin-top: 30px; 
+	
+}
+
+#contact-form label {
+	 font-size: 18px; margin-left: 4px;
+ }
+
+#contact-form input, #contact-form textarea { 
+	padding: 25px 25px 25px 18px; 
+	margin-top: 10px; 
+	margin-bottom: 18px;
+	border-radius: 10px;
+	background-color: #f7f7f7;
+	border: 1.2px solid#FFAE56;
+}
+
+#contact-form textarea {
+	width: 340px;
+	height: 120px;
+}
+
+#contact-form input, #contact-form textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+#contact-form input:last-child {
+	width: 186px;
+	font-size: 18px;
+	font-weight: 600;
+	padding-left: 25px;
+	background-color: #ff921c;
+	border-radius: 5px;
+	color: #fff;
+}
+
+#contact-form input:last-child:hover{
+	cursor: pointer;
+	border-radius: 20px;
+	opacity: 0.8;
+}
+
+
+#footer-con {
+	background-color: #424242;
+}
+
+#footer-logo {
+	grid-column: 1;
+	margin-top: 30px;
+	padding-left: 6px;
+}
+
+#footer-form {
+	grid-column: 1/-1;
+	margin-left: 6px;
+	margin-top: 10px;
+}
+
+#footer-form h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #fff;
+}
+
+#footer-form input {
+	padding-left: 20px;
+	font-size: 16px;
+	width: 200px;
+	height: 60px;
+	border-style: none;
+}
+
+.footer-button-signup {
+	position: absolute;
+
+	font-size: 18px;
+	font-weight: bolder;
+	color: #fffefe;
+
+	background-color: #8FA5CA;
+	width: 120px;
+	height: 62px;
+
+	border-radius: 0;
+	border-style: none;
+}
+
+.footer-button-signup:hover {
+	background-color: #FFAE56;
+	color: #fff;
+	cursor: pointer;
+}
+
+#media-footer {
+	grid-column: 1/-1;
+	margin-top: 20px;
+	margin-left: 6px;
+}
+
+#media-footer h3 { 
+	color: #fff; font-size: 18px;
+}
+
+#media-footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+#media-footer ul li {
+	display: inline;
+	margin: 10px;
+}
+
+#media-footer ul li a { 
+	margin-left: -10px;
+	font-size: 30px; color: #fff;
+}
+	
+#media-footer ul li a:hover { 
+	color: #FFAE56;
+ }
+
+#footer-con p {
+	grid-column: 1/-1;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-left: 6px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+
+#hero-enrg-con {
+	background: url(../images/mobile_drinks/cans_hero_m.jpg) no-repeat;
+	height: 458px;
+}
+
+#hero-drinks-text {
+	border-radius: 8px;
+	grid-column: 1/-1;
+	height: fit-content;
+	color: #FF921C;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+#hero-drinks-text h2 {
+	font-size: 36px;
+	line-height: 43px;
+}
+
+#hero-drinks-text span { 
+	color:  #ffffff; 
+}
+
+#hero-drinks-text p {
+	line-height: 22px;
+}
+
+
+#drinks h2 {
+	text-align: center;
+	grid-column: 1/-1;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	
+}
+
+#drinks img {
+	margin-left: -20px;
+}
+
+.drink_box {
+	grid-column: 1/-1;
+	margin-bottom: 20px;
+}
+
+.drink_box h3 {
+	
+	font-size: 30px;
+	color: #1c1c1c;
+	line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+.drink_box h4 {
+	
+	font-size: 30px;
+	color: #1c1c1c;
+	line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+
+.drink_box i {
+	 margin-right: 20px;
+	 
+}
+
+.buy-button,.buy-button-2 {
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: bolder;
+	letter-spacing: 0.5px;
+	color: #fdfdfd;
+	padding: 13px 34px;
+
+	border: #ffffff 1.5px solid;
+	border-radius: 8px;
+
+	margin-left: 320px;
+
+	display: flex;
+}
+
+.buy-button { 
+	grid-column: 2/3;
+	background-color: #ff921c;
+	
+}
+
+.buy-button:hover, .buy-button-2:hover {
+	text-align: center;
+	color: #fff;
+	border-radius: 20px;
+	transition: 0.1s;
+	background-color:#ffae56;
+	border-style: none;
+
+}
+
+
