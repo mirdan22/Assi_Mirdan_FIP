@@ -401,12 +401,12 @@ a {
  }
 
 #footer-con p {
-	grid-column: 1/-1;
+	/* padding-left: 50px; */
+	grid-column: 1/4;
 	color: #fff;
-	margin-bottom: 20px;
-	margin-left: 6px;
-	font-weight: 300;
-	font-size: 16px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 350;
 }
 
 
@@ -432,7 +432,7 @@ a {
 }
 
 #hero-drinks-text span { 
-	color:  #ffffff; 
+	color:  #1ba200; 
 }
 
 #hero-drinks-text p {
