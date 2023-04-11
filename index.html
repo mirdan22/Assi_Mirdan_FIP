@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Zima Drinks</title>
-<link href="css/normalize.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/grid.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -17,10 +18,12 @@
 
             <nav id="main-nav">
                 <h2 class="hidden">Main Navigation</h2>
+                <!-- <button id="button"></button>
+                <div id="burger-con"> -->
                 <ul>
-                    <li><a href="drinks.html">NEW DRINKS</a></li>
-                    <li><a href="flavors.html">All FLAVORS </a></li>
-                    <li><a href="brands.html">BRAND/TEAM</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="drinks.html">All FLAVORS</a></li>
+                    <li><a href="index_bt.html">BRAND / TEAM</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -39,8 +42,16 @@
             <section class="grid-con" id="energy">
                 <h2>NEW DRINKS</h2>
              <section class="energy-box" id="energy1">
-                    <a href="#"><img src="images/home/orange-solo4.jpg" alt="orange drink1"></a>
-                    <h3>Orange Drink1</h3>
+
+                <img
+                sizes="(max-width: 536px) 100vw, 536px"
+                srcset="
+                images/orange-solo4_k7ckpd_c_scale,w_200.jpg 200w,
+                images/orange-solo4_k7ckpd_c_scale,w_536.jpg 536w"
+                src="images/orange-solo4_k7ckpd_c_scale,w_536.jpg"
+                alt="orange drink1">      
+                    <!-- <a href="#"><img src="images/home/orange-solo4.jpg" alt="orange drink1"></a> -->
+                    <h3>Orange Drink</h3>
                         <p>Calories: 20
                             <br>Size: 300 mL
                             <br> Sugar: 5g
@@ -53,28 +64,46 @@
                  
              </section>
                 <section class="energy-box" id="energy2">
-                    <a href="#"><img src="images/home/solo-sreawberry.jpg" alt="orange drink2"></a>
-                    <h3>Orange Drink2</h3>
-                        <p>Calories: 20
+
+                <img
+                sizes="(max-width: 536px) 100vw, 536px"
+                srcset="
+                images/solo-sreawberry_zwnwlm_c_scale,w_200.jpg 200w,
+                images/solo-sreawberry_zwnwlm_c_scale,w_536.jpg 536w"
+                src="images/solo-sreawberry_zwnwlm_c_scale,w_536.jpg"
+                alt="sreawberry drink"> 
+
+                    <!-- <a href="#"><img src="images/home/solo-sreawberry.jpg" alt="orange drink2"></a> -->
+                    <h3>Strawberry Drink</h3>
+                        <p>Calories: 22
                             <br>Size: 300 mL
-                            <br> Sugar: 5g
-                            <br>Carbohydrate: 5% 
+                            <br> Sugar: 7g
+                            <br>Carbohydrate: 7% 
                             <br>Fat: 0 
-                            <br>Vitamin C: 70mg
+                            <br>Vitamin C: 74mg
                             <br>Price: $3.99
                         </p>
                         <a href="#" class="buy-hm-btn">Buy</a>
                     
                 </section>
                 <section class="energy-box" id="energy3">
-                    <a href="#"><img src="images/home/solo-lemon.jpg" alt="orange drink3"></a>
-                    <h3>Orange Drink3</h3>
+                    
+                    <img
+                    sizes="(max-width: 536px) 100vw, 536px"
+                    srcset="
+                    images/solo-lemon_ciocbo_c_scale,w_200.jpg 200w,
+                    images/solo-lemon_ciocbo_c_scale,w_536.jpg 536w"
+                    src="images/solo-lemon_ciocbo_c_scale,w_536.jpg"
+                alt="Lemon drink"> 
+                    
+                    <!-- <a href="#"><img src="images/home/solo-lemon.jpg" alt="orange drink3"></a> -->
+                    <h3>Lemon Drink</h3>
                         <p>Calories: 20
-                            <br>Size: 300 mL
-                            <br> Sugar: 5g
+                            <br>Size: 350 mL
+                            <br> Sugar: 6g
                             <br>Carbohydrate: 5% 
                             <br>Fat: 0 
-                            <br>Vitamin C: 70mg
+                            <br>Vitamin C: 20mg
                             <br>Price: $3.99
                         </p>
                         <a href="#" class="buy-hm-btn">Buy</a>
@@ -86,15 +115,30 @@
             <div id="about-con">
                 <section class="grid-con" id="about">
                     <div id="about-text">
-                        <h2>About Our Website</h2>
+                        <h2>About Our Brand</h2>
                       <p> Welcome to Zima Energy, your go-to source for high-quality energy drinks. Our brand is dedicated to providing you with the best possible experience, from the moment you take your first sip.
                         At Zima Energy, we are proud to offer three delicious flavors of energy drinks: Orange, Lemon, and Strawberry. Each flavor is carefully crafted using only the finest ingredients to give you an energizing boost that tastes great.
                         <br>Our team is passionate about creating drinks that not only provide energy but also taste amazing. We believe that everyone deserves to feel their best, and our energy drinks are designed to do just that.
                         With our commitment to quality and flavor, you can feel confident that you're getting a product that is truly exceptional.
                        Thank you for choosing Zima Energy. We look forward to energizing your day, one sip at a time. </p>
                         
-                    </div>    
-                    <img src="images/home/pkg-about.jpg" alt="about us img">
+                    </div>  
+                    
+                     <img
+                     sizes="(max-width: 746px) 100vw, 746px"
+                     srcset="images/pkg-about_igija6_c_scale,w_200.jpg 200w,
+                     images/pkg-about_igija6_c_scale,w_472.jpg 472w,
+                     images/pkg-about_igija6_c_scale,w_682.jpg 682w,
+                     images/pkg-about_igija6_c_scale,w_746.jpg 746w"
+                     src="images/pkg-about_igija6_c_scale,w_746.jpg"
+                     alt="about us img">
+                                                        <!-- src="images/about-us-hero_ijynhk_c_scale,w_3840.png"
+                    alt="row boats parked at a dock" id="about-hero">    
+                     -->
+                    <!-- <img src="images/home/pkg-about.jpg" alt="about us img"> -->
+
+
+
                 </section>  
             </div>
  
@@ -112,9 +156,8 @@
                         <h3 class="hidden">Footer Navigation</h3>
                         <ul>
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="drinks.html">NEW DRINKS</a></li>
-                            <li><a href="flavors.html">ALL FLAVORS</a></li>
-                            <li><a href="brands.html">BRANDS/TEAM</a></li>
+                            <li><a href="drinks.html">All FLAVORS</a></li>
+                            <li><a href="index_bt.html">BRAND / TEAM</a></li>
                             <li><a href="about.html">ABOUT US</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
                         </ul>
@@ -127,7 +170,7 @@
                         <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
                     </ul>
             </section>
-            <p id="footer-copy">© 2023 Drinks Copyright Inc.</p>
+            <p id="footer-copy">© 2023 Zima Drinks Copyright Inc.</p>
             </div>
         </section>
 
