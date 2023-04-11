@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Zima Drinks</title>
-<link href="css/normalize.css" rel="stylesheet">
+<link href="css/grid.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -18,9 +18,9 @@
             <nav id="main-nav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
-                    <li><a href="drinks.html">NEW DRINKS</a></li>
-                    <li><a href="flavors.html">All FLAVORS</a></li>
-                    <li><a href="brands.html">BRANDS</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="drinks.html">All FLAVORS</a></li>
+                    <li><a href="index_bt.html">BRAND / TEAM</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -30,23 +30,39 @@
 
         <main>
             <section class="grid-con" id="hero">
-                <img src="images/drinks/hero_drinks.jpg" alt="image" id="hero-image">
+
+                <img
+                sizes="(max-width: 780px) 100vw, 780px"
+                srcset="
+                images/hero_drinks_nvydjb_c_scale,w_200.jpg 200w,
+                images/hero_drinks_nvydjb_c_scale,w_780.jpg 780w"
+                src="images/hero_drinks_nvydjb_c_scale,w_780.jpg"
+                alt="hero-image">
+
+                <!-- <img src="images/drinks/hero_drinks.jpg" alt="image" id="hero-image"> -->
                 <h2>CHOOSE YOUR FLAVOR</h2>
                 <p>BOST YOUR ENERGY! </p>
-                <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    do eiusmodtempor incididunt ut labore et dolore magna a
-                    Ut enim ad minim veniam, quis nostrud exercitation ulla
-                    laboris nisiut aliquip exea commodo consequat.</p>
+                <p class="main-text">
+                    Zima Energy drinks are made fresh daily with love and care to give you an energizing start to your day. Our unique formula uses only the finest ingredients to provide a high-quality beverage that keeps you going throughout the day. Choose Zima Energy for a fresh, delicious, and energizing drink.</p>
                 <a href="#" class="button">Shop Now</a>
           
             </section> 
 
-            <section class="grid-con" id="drinks">
+            <section class="grid-con" id="drinks"> 
                 <h2>New Drinks</h2>
                 <section class="drinks-box">
-                    <a href="#"><img src="images/drinks/orange.jpg" alt="orange">
+
+                    <img
+                    sizes="(max-width: 700px) 100vw, 700px"
+                    srcset="
+                    images/orange_xv2gbz_c_scale,w_200.jpg 200w,
+                    images/orange_xv2gbz_c_scale,w_700.jpg 700w"
+                    src=" images/orange_xv2gbz_c_scale,w_700.jpg"
+                    alt="hero-image">
+
+                    <!-- <a href="#"><img src="images/drinks/orange.jpg" alt="orange"> -->
                     
-                    <h3>Orange Drink</h3></a>
+                    <h3>Orange Drink</h3>
                     <p>Calories: 20
                         <br>Size: 300 mL
                         <br> Sugar: 5g
@@ -59,36 +75,72 @@
             <!-- </section> -->
 
                 <section class="drinks-box">
-                    <a href="#"><img src="images/drinks/organic_d_r1c2.jpg" alt="organic">
+                    <img
+                    sizes="(max-width: 1750px) 40vw, 700px"
+                    srcset="
+                    images/organic_d_r1c2_w1k18u_c_scale,w_480.jpg 480w,
+                    images/organic_d_r1c2_w1k18u_c_scale,w_700.jpg 700w"
+                    src="images/organic_d_r1c2_w1k18u_c_scale,w_700.jpg"
+                    alt="organic">
+
+                    <!-- <a href="#"><img src="images/drinks/organic_d_r1c2.jpg" alt="organic"> -->
                    
-                    <h3>Orange Drink1</h3></a>
-                    <p>Calories: 20
-                        <br>Size: 300 mL
-                        <br> Sugar: 5g
+                    <h3>Lemon Drink</h3>
+                    <p>Calories: 25
+                        <br>Size: 350 mL
+                        <br> Sugar: 6g
                         <br>Carbohydrate: 5% 
                         <br>Fat: 0 
-                        <br>Vitamin C: 70mg
+                        <br>Vitamin C: 20mg
                         <br>Price: $3.99</p>
                         <a href="#" class="buy-button">Buy</a>
                 </section>
 
                 <section class="drinks-box">
-                    <a href="#"><img src="images/drinks/freshness_d_r1c3.jpg" alt="freshness">
+                    <img
+                    sizes="(max-width: 1750px) 40vw, 700px"
+                    srcset="
+                    images/freshness_d_r1c3_lmy24n_c_scale,w_480.jpg 480w,
+                    images/freshness_d_r1c3_lmy24n_c_scale,w_700.jpg 700w"
+                    src="images/freshness_d_r1c3_lmy24n_c_scale,w_700.jpg"
+                    alt="freshness">
+
+                    <!-- <a href="#"><img src="images/drinks/freshness_d_r1c3.jpg" alt="freshness"> -->
                
-                    <h3>Orange Drink2</h3></a>
-                    <p>Calories: 20
+                    <h3>Strawberry</h3>
+                    <p>Calories: 22
                         <br>Size: 300 mL
-                        <br> Sugar: 5g
-                        <br>Carbohydrate: 5% 
+                        <br> Sugar: 7g
+                        <br>Carbohydrate: 7% 
                         <br>Fat: 0 
-                        <br>Vitamin C: 70mg
+                        <br>Vitamin C: 74mg
                         <br>Price: $3.99</p>
                         <a href="#" class="buy-button">Buy</a>
                 </section>
 
                 <section class="drinks-box">
-                    <a href="#"><img src="images/drinks/power_d_r2c1.jpg" alt="power">
-                    <h3> Orange Drink3 </h3></a>
+
+                    <img
+                    sizes="(max-width: 1750px) 40vw, 700px"
+                    srcset="
+                    images/power_d_r2c1_ervpck_c_scale,w_320.jpg 320w,
+                images/power_d_r2c1_ervpck_c_scale,w_1178.jpg 1178w,
+                images/power_d_r2c1_ervpck_c_scale,w_2028.jpg 2028w,
+                images/power_d_r2c1_ervpck_c_scale,w_2022.jpg 2022w,
+                images/power_d_r2c1_ervpck_c_scale,w_2404.jpg 2404w,
+                images/power_d_r2c1_ervpck_c_scale,w_2731.jpg 2731w,
+                images/power_d_r2c1_ervpck_c_scale,w_3022.jpg 3022w,
+                images/power_d_r2c1_ervpck_c_scale,w_3306.jpg 3306w,
+                images/power_d_r2c1_ervpck_c_scale,w_3559.jpg 3559w,
+                images/power_d_r2c1_ervpck_c_scale,w_3814.jpg 3814w,
+                images/power_d_r2c1_ervpck_c_scale,w_3840.jpg 3840w,
+                    images/power_d_r2c1_ervpck_c_scale,w_480.jpg 480w,
+                    images/power_d_r2c1_ervpck_c_scale,w_700.jpg 700w"
+                    src="images/power_d_r2c1_ervpck_c_scale,w_700.jpg"
+                    alt="freshness">
+
+                    <!-- <a href="#"><img src="images/drinks/power_d_r2c1.jpg" alt="power"> -->
+                    <h3> Orange Drink3 </h3>
                     <p>Calories: 20
                         <br>Size: 300 mL
                         <br> Sugar: 5g
@@ -141,9 +193,8 @@
                         <h3 class="hidden">Footer Navigation</h3>
                         <ul>
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="drinks.html">NEW DRINKS</a></li>
-                            <li><a href="flavors.html">ALL FLAVORS</a></li>
-                            <li><a href="brands.html">BRANDS</a></li>
+                            <li><a href="drinks.html">All FLAVORS</a></li>
+                            <li><a href="index_bt.html">BRAND / TEAM</a></li>
                             <li><a href="about.html">ABOUT US</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
                         </ul>
@@ -155,7 +206,7 @@
                         <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
                     </ul>
             </section>
-            <p> © 2023 Drinks Copyright Inc. </p>
+            <p> © 2023 Zima Drinks Copyright Inc. </p>
             </div>
         </section>
 
