@@ -501,7 +501,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 #drinks-hero-con {
 	background: url(../images/home/hero_drinks.jpg);
-	height: 700px;
+	height: 800px;
 
 }
 
@@ -598,7 +598,7 @@ font-family: Arial, Helvetica, sans-serif;
 	color: #ffffff;
 	border: #ffae56 2px solid;
 	border-radius: 8px;
-	margin-top: 5px; 
+	margin-bottom: 5px; 
 	margin-left:400px;
 }
 
@@ -615,14 +615,15 @@ font-family: Arial, Helvetica, sans-serif;
 	background-color: #FF921C;
 	font-size: 19px;
 	font-weight: bolder;
-	padding: 11px 22px;
+	margin-left: 12px;
+	padding: 12px 30px;
 	color: #ffffff;
 	border: #ffae56 1.8px solid;
 	border-radius: 8px;
 	
 	margin-top: 5px; 
 	
-	margin-left: 260px;
+	margin-left: 280px;
 }
 
 .buy-button:hover {
@@ -632,3 +633,4 @@ font-family: Arial, Helvetica, sans-serif;
 	transition: 0.1s;
 	border-radius: 20px;
 }
+

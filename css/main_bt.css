@@ -192,14 +192,7 @@ nav a {
   width: 680px;
   border-radius: 5px;
 }
-/* .video-section video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 10%;
 
-} */
 
 main {
   margin-top: 20px;
@@ -360,9 +353,4 @@ text-align: center;
   padding: 70px;
 text-align: center;
 }
-/*   
-  .brand-section img {
-    max-height: 80px;
-    margin: 10px;
-  } */
-  
+

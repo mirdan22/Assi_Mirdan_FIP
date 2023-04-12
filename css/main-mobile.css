@@ -52,7 +52,7 @@ a {
 }
 
 #mobile-nav { 
-	grid-column: 4/-1;
+	grid-column: 2/4;
  }
 #header-logo { 
 	grid-column: 1;
@@ -64,11 +64,11 @@ a {
 .burger {
 	grid-column: 4;
 	width: 34px;
-	height: 6px;
-	background-color: #FF921C;
-	display: block;
-	margin-left: 40px;
-	margin-bottom: 5px;
+    height: 6px;
+    background-color: #FF921C;
+    display: block;
+    margin-left: 250px;
+    margin-bottom: 5px;
 }
 
 .burger:first-child { margin-top: 14px; }
@@ -114,6 +114,17 @@ a {
 }
 
 #image-slider-con h2, #about-us-con h2, #contact-con h2 {
+	grid-column: 1/-1;
+	color: #1a1a1a;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	padding-bottom: 30px;
+	padding-top: 70px;
+	margin: 0;
+	text-align: center;
+
+}
+h3 {
 	grid-column: 1/-1;
 	color: #1a1a1a;
 	font-family: Arial, Helvetica, sans-serif;
@@ -515,4 +526,81 @@ a {
 
 }
 
+/* Hide the menu by default */
+#mobile-nav ul {
+	display: none;
+  }
+  
+  /* Show the menu when the "active" class is added */
+  #mobile-nav ul.active {
+	text-align: center;
+	display: block;
+	grid-column: 1/2;
+	background-color: #424242;
+	padding-left: 40px;
+	color: white;
+	list-style: none;
+	margin-top: -50px;
+	border-radius: 12px;
+	height: 140px;
+	width: 140px;
 
+  }
+  #mobile-nav ul li a{
+	
+	font-size: 15px;
+	margin-left: -35px;
+	color: #f7f7f7;
+	
+
+  }
+  #mobile-nav ul li a:hover{
+	color: orange;
+  }
+
+
+  /* drinks */
+  /* Hide the menu by default */
+
+  #mobile-nav { 
+	grid-column: 2/4;
+ }
+#header-logo { 
+	grid-column: 1;
+ }
+#mobile-nav:hover 
+{ cursor:pointer; 
+	opacity: 0.8; }
+
+
+
+#mobile-nav_b ul {
+	display: none;
+  }
+  
+  /* Show the menu when the "active" class is added */
+  #mobile-nav_b ul.active {
+	text-align: center;
+	display: block;
+	grid-column: 1/2;
+	background-color: #424242;
+	padding-left: 40px;
+	color: white;
+	list-style: none;
+	margin-top: -50px;
+	border-radius: 12px;
+	height: 140px;
+	width: 140px;
+
+  }
+  #mobile-nav_b ul li a{
+	
+	font-size: 15px;
+	margin-left: -35px;
+	color: #f7f7f7;
+	
+
+  }
+  #mobile-nav_b ul li a:hover{
+	color: orange;
+  }
